@@ -1,0 +1,156 @@
+
+/* [1] Global */
+*{
+    line-height: 1.5em;
+    margin:0;
+    padding:0;
+    overflow:auto;
+}
+
+
+
+body{
+    color:#fff;
+    background-color: #42426F;
+    font-family:Raleway, Helvetica, sans-serif;
+}
+
+a{
+    font-weight:400;
+    text-decoration: none;
+    color:#fff;
+}
+
+h1{
+    font-weight: 550;
+}
+
+.code{
+    background-color:#2F2F4F;
+    width:50%;
+    border-left: 2px solid rgb(14, 141, 2);
+    color:#ccc;
+    padding:5px;
+    margin-left:5%;
+}
+
+.code-highlight{
+    color:#ff7f7f;
+}
+
+.syntax{
+    color:#ff7f7f;
+    background-color: rgb(231, 231, 231, 0.1);
+}
+
+.highlight{
+    color:#fff;
+}
+
+/* [1.5] Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #606060;
+  border-radius: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+
+/* [2] Sidebar */
+#navbar{
+    background-color: #2F2F4F;
+    width:20%;
+    min-width: 300px;
+    height:100%;
+    position:fixed;
+    text-align: left;
+    box-shadow: 0px 0px 25px 5px #000011;
+}
+
+#doc-title{
+    display: flex;
+    justify-content: center;
+    padding:30px;
+    font-size:40px;
+    text-align:center;
+    color:#fff;
+}
+
+.flex-container{
+    display:flex;
+    flex-direction: column;
+}
+
+#nav-bar li{
+    padding: 20px;
+    border-top: 1px solid #000; 
+}
+
+.nav-link{
+    font-size:25px;
+}
+
+/* Sections */
+.main-container{
+    margin-left:35%;
+}
+
+.chapter{
+    font-size:32px;
+    font-weight: bold;
+}
+
+.bullet{
+    color:#fff;
+}
+
+.content{
+    color:gold;
+}
+
+
+#introduction{
+    margin-top:50px;
+}
+
+.list{
+    margin-left:20px;
+    padding:0;
+    list-style-position: inside;
+    list-style-type: square;
+    color:gold;
+}
+
+.ol{
+    list-style-position: inside;
+    color:gold;
+    margin-left:20px;
+}
+
+@media (max-width: 1000px){
+    #navbar,
+    #doc-title,
+    #nav-bar,
+    .flex-container{
+        opacity:0;
+    }
+
+    .main-container{
+        margin-left:5%;
+    }
+}
