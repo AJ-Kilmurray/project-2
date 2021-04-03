@@ -4,6 +4,7 @@
 
 
 <head>
+
     <!-- Tags -->
 
     <meta charset="UTF-8">
@@ -20,43 +21,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
 
     <title>CSS Documentation</title>
+
 </head>
 
 
 
 <body>
+
+        <!-- Navbar -->
+
         <nav id="navbar">
+
             <!-- Navbar Header -->
 
             <header id="title">
+
                 <h1 id="doc-title">CSS Documentation</h1> 
+
             </header>
 
             <!-- Navbar Chapters -->
 
             <div class="flex-container">
+
                 <ul id="nav-bar">
-                    <li><a class="nav-link" href="#introduction">Introduction</a></li>
-                
-                    <li><a class="nav-link" href="#syntax">Syntax</a></li>
-                
-                    <li><a class="nav-link" href="#selectors">Selectors</a></li>
-                
-                    <li><a class="nav-link" href="#backgrounds">Backgrounds</a></li>
-                
-                    <li><a class="nav-link" href="#borders">Borders</a></li>
-                
-                    <li><a class="nav-link" href="#margins">Margins</a></li>
-                
-                    <li><a class="nav-link" href="#padding">Padding</a></li>
-                
+
+                    <li><a class="nav-link" href="#introduction">Introduction</a></li>              
+                    <li><a class="nav-link" href="#syntax">Syntax</a></li>              
+                    <li><a class="nav-link" href="#selectors">Selectors</a></li>               
+                    <li><a class="nav-link" href="#backgrounds">Backgrounds</a></li>                
+                    <li><a class="nav-link" href="#borders">Borders</a></li>                
+                    <li><a class="nav-link" href="#margins">Margins</a></li>               
+                    <li><a class="nav-link" href="#padding">Padding</li>
                     <li><a class="nav-link" href="#text">Text</a></li>
-                
-                    <li><a class="nav-link" href="#fonts">Fonts</a></li>
-                
+                    <li><a class="nav-link" href="#fonts">Fonts</a></li>                
                     <li><a class="nav-link" href="#lists">Lists</a></li>
+
                 </ul>
+
             </div>
+
         </nav>
 
 
@@ -66,143 +70,253 @@
     
         
     <main id="main-doc">
+
         <div class="main-container">
 
             <!-- Introduction-->
 
             <section class="main-section" id="introduction">
+
                 <header class="chapter">Introduction</header>
+
                     <br>
-                    <p class="content">CSS is the language we use to style a Web page.</p><br>
-                    <h1>What is CSS?</h1><br>
+
+                    <p class="content">CSS is the language we use to style a Web page.</p>
+
+					<br>
+
+                    <h1>What is CSS?</h1>
+
+					<br>
+
                     <ul id="intro">
+
                         <li class="list">CSS stands for Cascading Style Sheets</li>
                         <li class="list">CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
                         <li class="list">CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
                         <li class="list">External stylesheets are stored in CSS files</li>
+
                     </ul>
+
                     <br>
+
                     <h1>Why Use CSS?</h1>
+
                     <br>
+
                     <p class="content">CSS is used to define styles for your web pages, including the design, layout and variations in display for different
                      devices and screen sizes.</p>
+
                     <br>
+
                     <h1>CSS Solved a Big Problem</h1>
+
                     <br>
+
                     <p class="content">HTML was NEVER intended to contain tags for formatting a web page!<br>
-                        HTML was created to describe the content of a web page, like:</p><br><br>
+                        HTML was created to describe the content of a web page, like:</p>
+
+					<br><br>
+
                     <code>
+
                         <div class="code">
+
                             <span class="code-highlight">&lt;h1&gt;</span> This is a heading.<span class="code-highlight">&lt;/h1&gt;</span>
                             <br><br>
                             <span class="code-highlight">&lt;p&gt;</span> This is a paragraph.<span class="code-highlight">&lt;/p&gt;</span>
+
                         </div>
+
                     </code>
-                    <br> <br>
+
+                    <br><br>
+
                     <p class="content">When tags like &lt;font&gt;, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web
                         developers. Development of large websites, where fonts and color information were added to every single page, became
                         a long and expensive process.</p>
+
                     <br>
                     <br>
+
             </section>
 
             <!-- Syntax -->
             
             <section class="main-section" id="syntax">
+
                 <header class="chapter">Syntax</header>
+
                     <br>
+
                     <p class="content">The selector points to the HTML element you want to style.
+
                     <br><br>
+
                         The declaration block contains one or more declarations separated by semicolons.
+
                     <br><br>
+
                         Each declaration includes a CSS property name and a value, separated by a colon.
+
                     <br><br>
+
                         Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.
+
                     <br><br>
+
                         List of all available CSS syntax can be found <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank"><u>here</u></a>.</p>
+
                     <br>
+
                     <h1>Example</h1>
-                    <p class="content">In this example all <span class="code-highlight">&lt;p&gt;</span> elements will be center-aligned, with a red text color:</p><br>
+
+                    <p class="content">In this example all <span class="code-highlight">&lt;p&gt;</span> elements will be center-aligned, with a red text color:</p>
+					
+					<br>
+
                        <code>
+
                            <div class="code">
+
                                 <span class="code-highlight">p</span> {<br>
                                 <span class="code-highlight">color</span>: red;<br>
                                 <span class="code-highlight">text-align</span>: center;<br>
                                 }
+
                             </div>
+
                         </code>
+
                     <br><br>
+
             </section>
 
             <!-- Selectors -->
 
             <section class="main-section" id="selectors">
+
                 <header class="chapter">Selectors</header>
+
                     <br>
+
                     <p class="content">CSS selectors are used to "find" (or select) the HTML elements you want to style.
+
                     <br><br>
+
                          We can divide CSS selectors into five categories:</p>
+
                     <br>
+
                     <ul>
+
                         <li class="list">Simple selectors (select elements based on name, id, class)</li>
                         <li class="list">Combinator selectors (select elements based on a specific relationship between them)</li>
                         <li class="list">Pseudo-class selectors (select elements based on a certain state)</li>
                         <li class="list">Pseudo-elements selectors (select and style a part of an element)</li>
                         <li class="list">Attribute selectors (select elements based on an attribute or attribute value)</li>
+
                     </ul>
+
                     <br>
+
                     <h1>Example</h1>
-                    <p class="content">In this example the &lt;p&gt; element will be styled according to class="center" and to class="large":</p><br>
+
+                    <p class="content">In this example the &lt;p&gt; element will be styled according to class="center" and to class="large":</p>
+		
+					<br>
+
                     <code>
+
                         <div class="code">
+
                             <span class="code-highlight">&lt;p class="center large"&gt;</span>This paragraph refers to two classes.<span class="code-highlight">&lt;/p&gt;</span>
-                        </div>
+                        
+						</div>
+
                     </code>
+
             </section>
 
             <br><br>
 
-            <!-- Background -->
+            <!-- Backgrounds -->
 
             <section class="main-section" id="backgrounds">
+
                 <header class="chapter">Backgrounds</header>
+
                     <br>
-                    <p class="content">The CSS background properties are used to add background effects for elements.</p><br>
+
+                    <p class="content">The CSS background properties are used to add background effects for elements.</p>
+
+					<br>
+
                     <h1>Example</h1>
-                    <p class="content">The background color of a page is set like this:</p><br>
+
+                    <p class="content">The background color of a page is set like this:</p>
+
+					<br>
+
                     <code>
+
                         <div class="code">
+
                             <span class="code-highlight">body</span> {<br>
                             <span class="code-highlight">background-color</span>: lightblue;<br>
                             }
+
                         </div>
+
                     </code>
+
                     <br>
-                    <p class="content">With CSS, a color is most often specified by:</p><br>
+
+                    <p class="content">With CSS, a color is most often specified by:</p>
+					<br>
+
                     <ul>
+
                         <li class="list">a valid color name - like <span class="syntax">'red'</span></li>
                         <li class="list">a HEX value - like <span class="syntax">'#ff0000'</span></li>
                         <li class="list">an RGB value - like <span class="syntax">'rgb(255,0,0)'</span></li>
+
                     </ul>
+
                     <br>
+
                     <p class="content">Look at CSS Color Values for a complete list of possible color values.</p>
+
             </section>
+
             <br><br>
 
             <!-- Borders -->
 
             <section class="main-section" id="borders">
+
                 <header class="chapter">Borders</header>
+
                     <br>
+
                     <p class="content">The CSS border properties allow you to specify the style, width, and color of an element's border.</p>
+
                     <br>
+
                     <h1>CSS Border Style</h1>
+
                     <br>
-                    <p class="content">The border-style property specifies what kind of border to display.<br><br>
+
+                    <p class="content">The border-style property specifies what kind of border to display.
+
+					<br><br>
                     
-                        The following values are allowed:</p>
+                    The following values are allowed:</p>
+
                     <br>
+
                     <ul>
+
                         <li class="list"><span class="syntax">dotted</span> - Defines a dotted border</li>
                         <li class="list"><span class="syntax">dashed</span> - Defines a dashed border</li>
                         <li class="list"><span class="syntax">solid</span> - Defines a solid border</li>
@@ -214,155 +328,258 @@
                         <li class="list"><span class="syntax">none</span> - Defines no border</li>
                         <li class="list"><span class="syntax">hidden</span> - Defines a hidden border</li>
                         <li class="list"><span class="syntax">border-style</span> - Can have from one to four values (for the top border, right border, bottom border, and the left border).</li>
+
                     </ul>
+
                     <br>
+
             </section>
 
             <!-- Margins -->
 
             <section class="main-section" id="margins">
+
                 <header class="chapter">Margins</header>
+
                     <br>
+
                     <p class="content">The CSS <span class="syntax">margin</span> properties are used to create space around elements, outside of any defined borders.
-                    <br><br>
-                        With CSS, you have full control over the margins. There are properties for setting the margin for each side of an
-                        element (top, right, bottom, and left).</p>
+                    
+					<br><br>
+
+                    With CSS, you have full control over the margins. There are properties for setting the margin for each side of an
+                    element (top, right, bottom, and left).</p>
+
                     <br>
+
                     <h1>Margin - Individual Sides</h1>
+
                     <br>
+
                     <p class="content">CSS has properties for specifying the margin for each side of an element:</p>
+
                     <br>
+
                     <ul>
+
                         <li class="list"><span class="syntax">margin-top</span></li>
                         <li class="list"><span class="syntax">margin-right</span></li>
                         <li class="list"><span class="syntax">margin-bottom</span></li>
                         <li class="list"><span class="syntax">margin-left</span></li>
+
                     </ul>
+
                     <br>
+
                     <p class="content">All the margin properties can have the following values:</p>
+
                     <br>
                     <ul>
+
                         <li class="list">auto - the browser calculates the margin.</li>
                         <li class="list">length - specifies a margin in px, pt, cm, etc.</li>
                         <li class="list">% - specifies a margin in % of the width of the containing element.</li>
                         <li class="list">inherit - specifies that the margin should be inherited from the parent element.</li>
                         <li class="list">Tip: Negative values are allowed.</li>
+
                     </ul>
+
                     <br>
+
             </section>
 
             <!-- Padding -->
 
             <section class="main-section" id="padding">
+
                 <header class="chapter">Padding</header>
+
                     <br>
+
                     <p class="content">The CSS padding properties are used to generate space around an element's content, inside of any defined borders.
+
                     <br><br>
-                        With CSS, you have full control over the padding. There are properties for setting the padding for each side of an
-                        element (top, right, bottom, and left).</p>
+
+                    With CSS, you have full control over the padding. There are properties for setting the padding for each side of an
+                    element (top, right, bottom, and left).</p>
+
                     <br>
+
                     <h1>Padding - Individual Sides</h1>
+
                     <br>
+
                     <p class="content">CSS has properties for specifying the padding for each side of an element:</p>
+
                     <br>
+
                     <ul>
+
                         <li class="list"><span class="syntax">padding-top</span></li>
                         <li class="list"><span class="syntax">padding-right</span></li>
                         <li class="list"><span class="syntax">padding-bottom</span></li>
                         <li class="list"><span class="syntax">padding-left</span></li>
+
                     </ul>
+
                     <br>
+
                     <p class="content">All the padding properties can have the following values:</p>
+
                     <br>
+
                     <ul>
+
                         <li class="list">length - specifies a padding in px, pt, cm, etc.</li>
                         <li class="list">% - specifies a padding in % of the width of the containing element</li>
                         <li class="list">inherit - specifies that the padding should be inherited from the parent element</li>
+
                     </ul>
+
                     <br>
+
                     <p class="content"><strong>Note:</strong> Negative values are not allowed.</p>
+
                     <br>
+
             </section>
 
             <!-- Text -->
 
             <section class="main-section" id="text">
+
                 <header class="chapter">Text</header>
+
                     <br>
+
                     <p class="content">CSS has a lot of properties for formatting text.</p>
+
                     <br>
+
                     <h1>Text Color</h1>
+
                     <br>
+
                     <p class="content">The color property is used to set the color of the text. The color is specified by:</p>
+
                     <br>
+
                     <ul>
+
                         <li class="list">a valid color name - like <span class="syntax">'red'</span></li>
                         <li class="list">a HEX value - like <span class="syntax">'#ff0000'</span></li>
                         <li class="list">an RGB value - like <span class="syntax">'rgb(255,0,0)'</span></li>
+
                     </ul>
+
                     <br>
+
                     <p class="content">Look at <a href="" target="_blank"><u>CSS Color Values</u></a> for a complete list of possible color values.
+
                     <br><br>
-                    The default text color for a page is defined in the body selector.</p>     
+
+                    The default text color for a page is defined in the body selector.</p>
+
             </section>
+
             <br>
 
             <!-- Fonts -->
 
             <section class="main-section" id="fonts">
-                <header class="chapter">Fonts</header>
-                    <br>
-                    <p class="content">Font Selection is Important.<br><br>
 
-                        Choosing the right font has a huge impact on how the readers experience a website.<br>
-                        The right font can create a strong identity for your brand.<br>
-                        Using a font that is easy to read is important.<br>
-                        The font adds value to your text.<br>
-                        It is also important to choose the correct color and text size for the font.</p><br>
+                <header class="chapter">Fonts</header>
+
+                    <br>
+
+                    <p class="content">Font Selection is Important.
+
+					<br><br>
+
+                    Choosing the right font has a huge impact on how the readers experience a website.<br>
+                    The right font can create a strong identity for your brand.<br>
+                    Using a font that is easy to read is important.<br>
+                    The font adds value to your text.<br>
+                    It is also important to choose the correct color and text size for the font.</p><br>
 
                     <h1>Generic Font Families</h1>
+
                     <br>
-                    <p class="content">In CSS there are five generic font families:</p><br>
+
+                    <p class="content">In CSS there are five generic font families:</p>
+
+					<br>
+
                     <ol>
+
                         <li class="ol"><strong>Serif</strong> fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance.</li>
                         <li class="ol"><strong>Sans-serif</strong> fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.</li>
                         <li class="ol"><strong>Monospace</strong> fonts - here all the letters have the same fixed width. They create a mechanical look.</li>
                         <li class="ol"><strong>Cursive</strong> fonts imitate human handwriting.</li>
                         <li class="ol"><strong>Fantasy</strong> fonts are decorative/playful fonts.</li>
+
                     </ol>
+
                     <br>
+
                     <p class="content">All the different font names belong to one of the generic font families.</p>
+
                     <br>
+
             </section>
 
             <!-- Lists -->
 
             <section class="main-section"id="lists">
+
                 <header class="chapter">Lists</header>
+
                     <br>
+
                     <p class="content">In HTML, there are two main types of lists:<p>
+
                     <br>
+
                     <ul>
+
                         <li class="list">unordered lists (&lt;ul&gt;) - the list items are marked with bullets</li>
                         <li class="list">ordered lists (&lt;ol&gt;) - the list items are marked with numbers or letters</li>
+
                     </ul>
+
                     <br>
+				
                     <p class="content">The CSS list properties allow you to:</p>
+
                     <br>
+
                     <ul>
+
                         <li class="list">Set different list item markers for ordered lists</li>
                         <li class="list">Set different list item markers for unordered lists</li>
                         <li class="list">Set an image as the list item marker</li>
                         <li class="list">Add background colors to lists and list items</li>
+
                     </ul>
+
                     <br>
-                    <h1>Different List Item Markers</h1><br>
-                    <p class="content">The list-style-type property specifies the type of list item marker.<br><br>
+
+                    <h1>Different List Item Markers</h1>
+
+					<br>
+
+                    <p class="content">The list-style-type property specifies the type of list item marker.
+
+					<br><br>
                     
                     The following example shows some of the available list item markers:</p>
+
                     <br>
+
                     <code>
+
                         <div class="code">
+
                             <span class="code-highlight">ul.a</span> {<br>
                             <span class="code-highlight">list-style-type</span>: circle;<br>
                             }<br><br>
@@ -378,16 +595,23 @@
                             <span class="code-highlight">ol.d</span> {<br>
                             <span class="code-highlight">list-style-type</span>: lower-alpha;<br>
                             }<br>
+
                         </div>
+
                     </code>
+
             </section>
+
             <br>
             <br>
             <br>
             <br>
             <br>
+
         </div>
+
     </main>
+
 </body>
 
 </html>
